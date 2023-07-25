@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Session 14-Mini Project 1</title>
+</head>
+<body>
+    <header>
+        <h1>Employee Crud App</h1>
+        <div class="search-container">
+            <input type="text" name="search" id="search" onchange="searchData()" placeholder="Search by Employee First Name">
+            <img src="images/search.png" alt="search">
+        </div>
+    </header>
+    <div class="main-container">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee First Name</th>
+                    <th>Employee Last Name</th>
+                    <th>Employee Email id</th>
+                    <th>Employee role</th>
+                    <th>Employee City</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td id="f">John</td>
+                    <td>Doe</td>
+                    <td>john001@pqr.com</td>
+                    <td>Developer</td>
+                    <td>New York</td>
+                    <td>
+                        <button class="edit-btn" onclick="editData(this.parentNode.parentNode)">Edit</button>
+                        <button class="delete-btn" onclick="deleteData(this.parentNode.parentNode)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Jack</td>
+                    <td>Smith</td>
+                    <td>jack002@pqr.com</td>
+                    <td>Developer</td>
+                    <td>Canada</td>
+                    <td>
+                        <button class="edit-btn" onclick="editData(this.parentNode.parentNode)">Edit</button>
+                        <button class="delete-btn" onclick="deleteData(this.parentNode.parentNode)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Sam</td>
+                    <td>Watson</td>
+                    <td>sam003@pqr.com</td>
+                    <td>Tester</td>
+                    <td>Houston</td>
+                    <td>
+                        <button class="edit-btn" onclick="editData(this.parentNode.parentNode)">Edit</button>
+                        <button class="delete-btn" onclick="deleteData(this.parentNode.parentNode)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>James</td>
+                    <td>William</td>
+                    <td>james004@pqr.com</td>
+                    <td>Tester</td>
+                    <td>Hong Kong</td>
+                    <td>
+                        <button class="edit-btn" onclick="editData(this.parentNode.parentNode)">Edit</button>
+                        <button class="delete-btn" onclick="deleteData(this.parentNode.parentNode)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>Peter</td>
+                    <td>Kent</td>
+                    <td>peter005@pqr.com</td>
+                    <td>Manager</td>
+                    <td>Denmark</td>
+                    <td>
+                        <button class="edit-btn" onclick="editData(this.parentNode.parentNode)">Edit</button>
+                        <button class="delete-btn" onclick="deleteData(this.parentNode.parentNode)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="nodata">No Data Found!</p>
+        <div id="modal">
+            <h3>Update Employee Data</h3>
+            <hr>
+            <div class="modal-field">
+                <label for="e-id">Employee ID:</label>
+                <input type="number" id="e-id" class="updatedata">
+            </div>
+            <div class="modal-field">
+                <label for="firstname">Employee First Name:</label>
+                <input type="text" id="firstname" class="updatedata">
+            </div>
+            <div class="modal-field">
+                <label for="lastname">Employee Last Name:</label>
+                <input type="text" id="lastname" class="updatedata">
+            </div>
+            <div class="modal-field">
+                <label for="email">Employee Email id:</label>
+                <input type="email" id="email" class="updatedata">
+            </div>
+            <div class="modal-field">
+                <label for="role">Employee Role:</label>
+                <input type="text" id="role" class="updatedata">
+            </div>
+            <div class="modal-field">
+                <label for="city">Employee City:</label>
+                <input type="text" id="city" class="updatedata">
+            </div>
+            <div class="modal-btns">
+                <button class="cancel-btn" onclick="cancelUpdate()">Cancel</button>
+                <button class="update-btn" onclick="updateData()">Update</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

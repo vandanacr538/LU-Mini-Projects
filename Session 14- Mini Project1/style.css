@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: #494949;
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 140px 20px 60px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+header h1{
+    margin: 0;
+    font-size: 30px;
+}
+.search-container{
+    background-color: #fff;
+    width: 300px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 10px ;
+    box-sizing: border-box;
+}
+#search{
+    width: 80%;
+    border: none;
+}
+#search:focus{
+    outline: none;
+}
+.search-container img{
+    cursor: pointer;
+}
+.main-container{
+    position: relative;
+    top: 70px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+table{
+    margin: 30px auto;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+th{
+    background-color: #f1f1f1;
+}
+table tr:hover{
+    background-color: #f1f1f1;
+}
+.edit-btn, .delete-btn{
+    border: none;
+    height: 25px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.edit-btn{
+    width: 40px;
+    background-color: #5e5eaf;
+    margin-right: 8px;
+}
+.delete-btn{
+    width: 50px;
+    background-color: #f85d5d;
+}
+.edit-btn:hover,.delete-btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+#nodata{
+    display: none;
+    text-align: center;
+}
+#modal{
+    display: none;
+    margin: 10px auto;
+    height: auto;
+    width: 40%;
+    padding: 10px 25px 30px;
+    box-sizing: border-box;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    position: relative;
+}
+#modal h3{
+    text-align: center;
+    margin: 10px;
+}
+hr{
+    border: none;
+    background-color: #eee;
+    height: 1px;
+}
+.modal-field{
+    margin: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.updatedata{
+    width: 50%;
+    height: 20px;
+    border: none;
+    border: 1px solid #eee;
+}
+.modal-btns{
+    position: absolute;
+    right: 45px;
+    bottom: 10px;
+}
+.update-btn, .cancel-btn{
+    border: none;
+    width: 55px;
+    height: 25px;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.update-btn{
+    background-color: #395e39;
+    margin-left: 10px;
+}
+.cancel-btn{
+    background-color: #f85d5d;
+}
+.update-btn:hover, .cancel-btn:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+} 
